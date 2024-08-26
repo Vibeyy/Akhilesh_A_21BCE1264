@@ -1,0 +1,39 @@
+.game-container {
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  grid-template-rows: repeat(5, 50px);
+  gap: 5px;
+  margin: 20px auto;
+  width: max-content;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.cell.selected {
+  background-color: #a0d8f4; 
+}
+
+.cell.valid-move {
+  background-color: #a0f4a0; 
+}
+
+.valid-moves {
+  margin-top: 20px;
+}
+
+.move-history {
+  margin-top: 20px;
+}
